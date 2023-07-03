@@ -1,3 +1,5 @@
+from math import floor
+
 tournaments_count = int(input())
 starting_points = int(input())
 
@@ -25,5 +27,5 @@ average_points /= tournaments_count
 tournamets_won_average = (tournamets_won_average / tournaments_count) * 100
 
 print(f'Final points: {total_points}')
-print(f'Average points: {int(average_points)}')
+print(f'Average points: {floor(average_points)}')
 print(f'{tournamets_won_average:.2f}%')
