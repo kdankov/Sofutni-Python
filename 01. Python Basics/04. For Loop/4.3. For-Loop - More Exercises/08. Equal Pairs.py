@@ -1,16 +1,16 @@
 count = int(input())
-previousSum = int(input()) + int(input())
-maxDiff = 0
+previous_sum = int(input()) + int(input())
+max_diff = 0
 
 for i in range(count - 1):
-    currentSum = int(input()) + int(input())
+    current_sum = int(input()) + int(input())
 
-    if abs(previousSum - currentSum) > maxDiff:
-        maxDiff = abs(previousSum - currentSum)
+    if abs(previous_sum - current_sum) > max_diff:
+        max_diff = abs(previous_sum - current_sum)
 
-    previousSum = currentSum
+    previous_sum = current_sum
 
-if maxDiff == 0:
-    print(f"Yes, value={previousSum}")
+if max_diff == 0:
+    print(f"Yes, value={previous_sum}")
 else:
-    print(f"No, maxdiff={maxDiff}")
+    print(f"No, maxdiff={max_diff}")
