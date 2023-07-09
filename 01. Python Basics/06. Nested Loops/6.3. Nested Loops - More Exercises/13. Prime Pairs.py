@@ -1,3 +1,5 @@
+# SOLUTION 1
+# ----------------------------------------------------
 from math import sqrt, floor
 
 first_pair_start = int(input())
@@ -24,3 +26,17 @@ for first in range(first_pair_start, first_pair_end + 1):
         
         if is_first_pair_prime and is_second_pair_prime:
             print(f'{first}{second}')
+
+# SOLUTION 2
+# ----------------------------------------------------
+# first_pair_start = int(input())
+# second_pair_start = int(input())
+
+# first_pair_end = first_pair_start + int(input())
+# second_pair_end = second_pair_start + int(input())
+
+# for i in range(first_pair_start, first_pair_end + 1):
+#     for j in range(second_pair_start, second_pair_end + 1):
+#         if i % 2 != 0 and i % 3 !=0 and i % 5 != 0 and  i % 7 != 0 \
+#         and j % 2 != 0 and j % 3 != 0 and j % 5 != 0 and j % 7 !=0:
+#             print(f'{i}{j}')
