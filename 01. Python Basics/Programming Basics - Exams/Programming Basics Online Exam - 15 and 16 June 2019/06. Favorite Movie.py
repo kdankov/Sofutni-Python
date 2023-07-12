@@ -11,9 +11,9 @@ while movie_name != 'STOP':
     current_sum = 0
     for letter in movie_name:
         if letter.islower():
-            current_sum = current_sum + (ord(letter) - len(movie_name) * 2)
+            current_sum += ord(letter) - len(movie_name) * 2
         elif letter.isupper():
-            current_sum = current_sum + (ord(letter) - len(movie_name))
+            current_sum += ord(letter) - len(movie_name)
         else:
             current_sum += ord(letter)
     
