@@ -1,7 +1,7 @@
 n = int(input())
 
 for i in range(n):
-    number = float(input())
+    number = int(input())
     if number == 88:
         print('Hello')
     elif number == 86:
