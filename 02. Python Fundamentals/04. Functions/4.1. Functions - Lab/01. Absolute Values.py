@@ -1,6 +1,8 @@
 def absolute_values(nums):
-    absolute = [float(x) for x in numbers.split()]
-    print([abs(num) for num in absolute])
+    absolute = [abs(float(x)) for x in nums.split()]
+    
+    return absolute
 
 numbers = input()
-absolute_values(numbers)
+
+print(absolute_values(numbers))
