@@ -1,6 +1,7 @@
 def is_digit(num):
     return num >= 48 and num <= 57
 
+
 def num_count_minimum(password):
     return len([x for x in password if x.isdigit()]) >= 2
         
