@@ -22,7 +22,7 @@ else:
         print('Password must be between 6 and 10 characters')
         
     if not is_letter_digit(password):
-        print('Password must consist only of letters and digits');
+        print('Password must consist only of letters and digits')
 
     if not num_count_minimum(password):
         print('Password must have at least 2 digits')
