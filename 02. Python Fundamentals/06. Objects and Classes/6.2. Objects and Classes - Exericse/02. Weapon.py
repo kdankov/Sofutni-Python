@@ -1,5 +1,5 @@
 class Weapon:
-    def __init__(self, bullets: int):
+    def __init__(self, bullets):
         self.bullets = bullets
         
     def shoot(self):
