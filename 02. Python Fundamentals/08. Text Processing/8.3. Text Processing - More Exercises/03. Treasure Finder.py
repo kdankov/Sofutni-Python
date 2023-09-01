@@ -7,13 +7,15 @@ while current_line != 'find':
     count = 0
 
     while count < len(current_line):
-        for j in range(len(key)):
+        for i in range(len(key)):
             if count == len(current_line):
                 break
 
-            current_number = int(key[j])
+            current_number = int(key[i])
             current_char = ord(current_line[count])
+        
             count += 1
+            
             decrypted_char = chr(current_char - current_number)
             decrypted += decrypted_char 
 
