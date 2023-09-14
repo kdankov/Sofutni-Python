@@ -9,16 +9,14 @@ for i in range(n):
         number = int(query[2:])
         stack.append(number)
 
-    elif query == '2':
-        if stack:
+    elif stack:
+        if query == '2':
             stack.pop()
 
-    elif query == '3':
-        if stack:
+        elif query == '3':
             print(max(stack))
 
-    elif query == '4':
-        if stack:
+        elif query == '4':
             print(min(stack))
 
 while len(stack) != 1:
