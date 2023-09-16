@@ -10,7 +10,8 @@ for _ in range(guests_count):
 guest = input()
 
 while guest != 'END':
-    reservations.remove(guest)
+    if guest in reservations:
+        reservations.remove(guest)
 
     guest = input()
 
