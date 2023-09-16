@@ -9,9 +9,10 @@ for _ in range(cars_count):
         parking.add(number)
 
     elif direction == 'OUT':
-        parking.remove(number)
+        if number in parking:
+            parking.remove(number)
 
-if len(parking) > 0:
+if parking:
     for car in parking:
         print(car)
 else:
