@@ -30,12 +30,6 @@ if milkshakes_count == 5:
 else:
     print('Not enough milkshakes.')
 
-if chocolates:
-    print(f'Chocolate: {", ".join([str(x) for x in chocolates])}')
-else:
-    print(f'Chocolate: empty')
+print(f'Chocolate: {", ".join([str(x) for x in chocolates]) if chocolates else "empty"}')
 
-if cups_of_milk:
-    print(f'Milk: {", ".join([str(x) for x in cups_of_milk])}')
-else:
-    print(f'Milk: empty')
+print(f'Milk: {", ".join([str(x) for x in cups_of_milk]) if cups_of_milk else "empty"}')
