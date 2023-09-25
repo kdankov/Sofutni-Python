@@ -1,15 +1,18 @@
 from collections import deque
 
 rows, cols = [int(x) for x in input().split()]
-snake = list(input())
+snake = deque(input())
 
-snake_queue = deque(snake)
+matrix = []
 
 for row in range(rows):
-    while len(snake_queue) < cols:
-        snake_queue.extend(snake)
+    matrix.append([''] * cols)
+    for col in range(cols):
+        if row % 2 == 0:
+            matrix[row][col] = snake[0]
+        else:
+            matrix[row][-1 - col] = snake[0]
 
-    if row % 2 == 0:
-        print(*[snake_queue.popleft() for _ in range(cols)], sep="")
-    else:
-        print(*[snake_queue.popleft() for _ in range(cols)][::-1], sep="")
+        snake.rotate(-1)
+
+[print(*row, sep='') for row in matrix]
