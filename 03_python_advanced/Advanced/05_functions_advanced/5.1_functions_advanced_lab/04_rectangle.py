@@ -11,5 +11,6 @@ def rectangle(length, width):
     result = f'Rectangle area: {area()}\nRectangle perimeter: {perimeter()}'
     return result
 
+
 print(rectangle(2, 10))
 print(rectangle('2', 10))
