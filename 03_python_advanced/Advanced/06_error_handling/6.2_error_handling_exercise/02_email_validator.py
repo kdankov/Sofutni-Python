@@ -10,12 +10,19 @@ class InvalidDomainError(Exception):
     pass
 
 
+class MoreThanOneAtSymbolError(Exception):
+    pass
+
+
 email = input()
 
 EMAIL_MIN_LENGTH = 5
 VALID_DOMAINS = ['.com', '.bg', '.org', '.net']
 
 while email != 'End':
+    if email.count("@") > 1:
+        raise MoreThanOneAtSymbolError("Email should contain only one @ symbol!")
+
     if '@' not in email:
         raise MustContainAtSymbolError('Email must contain @')
 
