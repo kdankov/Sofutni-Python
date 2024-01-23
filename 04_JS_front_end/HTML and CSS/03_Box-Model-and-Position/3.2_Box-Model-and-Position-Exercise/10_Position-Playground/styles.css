@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.viewport {
+    height: 100vh;
+    position: relative;
+}
+
+.viewport:nth-child(1) {
+    background: linear-gradient(90deg, rgb(24, 104, 189) 0%, rgb(59, 252, 194) 100%);
+}
+
+.viewport:nth-child(2) {
+    background: linear-gradient(90deg, rgb(198, 44, 123) 0%, rgba(255,121,86,1) 67%);
+}
+
+.card {
+    max-height: 90%;
+    max-width: 45%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.3em;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card .icon {
+    padding: 0 0.75em 0.75em 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color:white;
+    font-size: 1.5em;
+    z-index: 2;
+}
+
+.card .inner-shaddow {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 0 5em 5em rgba(0, 0, 0, 0.5) inset;
+    z-index: 1;
+}
