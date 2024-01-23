@@ -1,0 +1,49 @@
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+body{
+    font-family: inherit;
+    margin: 2em;
+}
+
+header {
+    border-bottom: 2px solid;
+    position: relative;
+}
+
+header p {
+    font-size: 36px;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 1em;
+}
+
+nav {
+    display: inline-block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    margin: 0em 1em;
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 160, 0);
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    padding-top: 0.5em;
+}
+
+article p {
+    color: #444;
+}
