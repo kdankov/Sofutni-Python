@@ -1,0 +1,130 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(238, 238, 238);
+}
+
+body {
+    width: 70%;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+blockquote {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 1.1;
+    padding-top: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    padding: 0.5em;
+    border: 2px solid #000;
+    box-shadow: 0 0 1em 0.5em rgba(0, 0, 0, 0.25);
+}
+
+/* Header */
+
+.site-header {
+    position: relative;
+    border-bottom: 2px solid #000;
+}
+
+.site-title {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.site-nav {
+    position: absolute;
+    top: 1.5em;
+    left: 70%;
+    display: inline-block;
+}
+
+.site-nav ul {
+    list-style: none;
+}
+
+.site-nav li {
+    margin: 0 0.5em;
+    display: inline-block;
+}
+
+.site-nav li a {
+    color: rgb(0, 102, 0);
+    text-decoration: none;
+}
+
+/* Main */
+
+.wrapper {
+    position: relative;
+}
+
+.site-article h1 {
+    font-size: 32px;
+}
+
+.site-article h2 {
+    font-size: 24px;
+}
+
+.site-article {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+}
+
+.first-image {
+    float: right;
+    margin: 0 1em;
+}
+
+blockquote {
+    color: gray;
+    font-style: italic;
+    border-left: 0.2em solid gray;
+    margin: 0 0.5em 0 2em;
+    padding: 0 0 4em 1em;
+    width: 50%;
+    float: right;
+}
+
+blockquote p:first-child {
+    padding-top: 0;
+    margin-top: 0;
+    line-height: 1.5;
+}
+
+blockquote .author {
+    text-align: end;
+}
+
+.second-image {
+    float: left;
+    margin: 0 1em 1em 0;
+}
+
+/* Side Bar */
+
+.side-bar {
+    position: absolute;
+    top: 0;
+    left: 75%;
+}
+
+.side-bar h3 {
+    font-size: 26px;
+}
+
+.side-bar a {
+    color: rgb(0, 160, 0)
+}
