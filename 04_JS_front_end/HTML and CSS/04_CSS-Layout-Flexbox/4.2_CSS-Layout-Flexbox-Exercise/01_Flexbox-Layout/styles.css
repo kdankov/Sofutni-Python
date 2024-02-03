@@ -6,31 +6,34 @@
 
 body {
     display: flex;
-    box-sizing: border-box;
-    background-color: #EEE;
+    background-color: #eee;
     flex-wrap: wrap;
     padding: 2em;
     gap: 2em;
 }
 
-header, main, aside, footer {
-    padding: 2em;
+body > * {
+    padding: 1em;
     background-color: #fff;
-    color: #000;
     border-radius: 0.4em;
-    box-shadow: 0 0 1em 0 rgba(0,0,0,0.2);
+    box-shadow: 0 0 1em 0 rgba(0,0,0,0.3);
+    text-transform: uppercase;
 }
 
-header, footer {
-    flex-basis: 100%;
-    min-height: 100px;
+body > header,
+body > footer {
+    flex: 1 0 100%;
 }
 
-main {
-    flex: 8 1 40rem;
-    min-height: 200px;
+body > main,
+body > aside {
+    min-height: 300px;
 }
 
-aside {
-    flex: 2 1 20rem;
+body > main {
+    flex: 1 0 60%;
+}
+
+body > aside {
+    flex: 1 1 auto;
 }
