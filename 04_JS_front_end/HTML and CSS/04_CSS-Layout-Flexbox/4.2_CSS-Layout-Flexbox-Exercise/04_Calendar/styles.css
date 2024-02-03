@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-html {
-    font-family: Verdana, serif;
-}
-
 body {
     padding: 2em;
 }
@@ -15,6 +11,7 @@ body {
 .container {
     display: flex;
     max-width: 65vw;
+    margin: 0 auto;
 }
 
 section {
@@ -22,19 +19,19 @@ section {
     flex-wrap: wrap;
 }
 
+section span:nth-child(1),
+section span:nth-child(7) {
+    flex: 1 0 100%;
+}
+
 span {
-    border: 1px solid black;
-    text-align: center;
     flex-grow: 1;
-    padding: 0.5em 0.5em 2em;
+    display: block;
+    border: 1px solid black;
+    padding: 1em 0.5em 2em;
+    text-align: center;
 }
 
-.week span:nth-child(1),
-.week span:nth-child(7) {
-    flex-basis: 100%;
-    padding-bottom: 3em;
-}
-
-section.note span {
-    padding-bottom: 7em;
+.notes span {
+    padding-top: 0.2em;
 }
