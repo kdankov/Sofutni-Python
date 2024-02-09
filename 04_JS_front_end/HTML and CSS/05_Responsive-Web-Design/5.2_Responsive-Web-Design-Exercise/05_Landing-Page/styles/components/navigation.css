@@ -1,0 +1,17 @@
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar li+li {
+    padding-left: 2em;
+}
+
+.navbar a {
+    color: #333;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #921ea9;
+}

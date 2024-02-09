@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+    font: 16px/1.5 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+h2,
+.site-footer h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.site-title {
+    font-size: 2.5em;
+    color: #921ea9
+}
+
+.site-header span p:nth-child(2) {
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+.upper-title,
+.middle-title,
+.newsletter-title {
+    font-size: 2.5em;
+}
+
+.upper-content p {
+    font-size: 1.2em;
+}
