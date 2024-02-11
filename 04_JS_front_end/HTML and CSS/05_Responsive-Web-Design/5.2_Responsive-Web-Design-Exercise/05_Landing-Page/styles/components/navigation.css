@@ -1,11 +1,10 @@
 .navbar ul {
     display: flex;
+    flex-direction: column;
+    gap: 1em;
     list-style-type: none;
 }
 
-.navbar li+li {
-    padding-left: 2em;
-}
 
 .navbar a {
     color: #333;
@@ -14,4 +13,10 @@
 
 .navbar a:hover {
     color: #921ea9;
+}
+
+@media (min-width: 425px) {
+    .navbar ul {
+        flex-direction: row;
+    }
 }

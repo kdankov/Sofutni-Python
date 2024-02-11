@@ -4,6 +4,40 @@ html {
     font: 16px/1.5 'Roboto', Arial, Helvetica, sans-serif;
 }
 
+@media (min-width: 300px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 430px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1024px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1440px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1600px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+h1 { font-size: 2.8em; } /* 14 * 2.8 = 39px */
+h2 { font-size: 2.5em; } /* 14 * 2.2 = 31px */
+h3 { font-size: 1.2em; } /* 14 * 1.8 = 25px */
+
 h2,
 .site-footer h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -27,4 +61,8 @@ h2,
 
 .upper-content p {
     font-size: 1.2em;
+}
+
+.footer-content h2 {
+    font-size: 2em;
 }

@@ -2,7 +2,7 @@ body {
     background-color: #eee;
 }
 
-.container {
-    max-width: 85%;
+.site {
+    min-width: 100vw;
     margin: 0 auto;
 }

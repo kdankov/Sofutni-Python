@@ -1,12 +1,21 @@
 /* TOP SIDE */
 
 .site-main {
-    box-shadow: 0 4px 2px rgb(0, 0, 0, 0.2);
+    min-width: 100vw;
+    box-shadow: rgba(0, 0, 0, 0.23) 0px 7px 6px
 }
 
+
 .top {
-    max-width: 70vw;
-    margin: 4em auto 1em;
+    width: 70vw;
+    margin: 2em auto;
+}
+
+@media (max-width: 1023px) {
+    .top {
+        min-width: 100vw;
+        padding: 2em;
+    }
 }
 
 .upper-container {
@@ -14,6 +23,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 3em;
+    padding-right: 2em;
 }
 
 .upper-content {
@@ -76,12 +86,20 @@
 }
 
 .card-media {
+    width: 60%;
+    align-self: center;
     overflow: hidden;
     aspect-ratio: 1/1;
     border-radius: 50%;
     background: #090;
     border: 5px solid #fff;
     box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1023px) {
+    .card {
+        max-width: 40%;
+    }
 }
 
 .name,
@@ -91,7 +109,8 @@
 }
 
 .name {
-    padding: 1em 1em 0 1em;;
+    padding: 1em 1em 0 1em;
+    ;
 }
 
 .job {
@@ -101,13 +120,14 @@
 /* NEWSLETTER */
 
 .newsletter {
+    min-width: 100vw;
     text-align: center;
     background-color: purple;
     padding: 2em;
 }
 
 .newsletter-container {
-    max-width: 80vw;
+    max-width: 100vw;
     margin: 0 auto;
     padding-bottom: 2em;
 }
@@ -129,18 +149,18 @@ form {
 }
 
 .newsletter-form input[type="text"] {
-    width: 30%;
+    min-width: 30%;
     height: 3em;
-    flex: 1;
 }
 
 .newsletter-form input[type="submit"] {
     background-color: white;
     height: 3em;
-    width: 10%;
+    min-width: 10%;
     border: 1px solid black;
     border-radius: 2px;
     margin-left: 1em;
+    padding: 1em;
 }
 
 /* TESTIMONIALS */
@@ -148,9 +168,15 @@ form {
 .testimonials {
     max-width: 70%;
     margin: 0 auto;
-    padding-bottom: 4em;
 }
 
 .testimonials .info {
     padding-top: 1em;
+}
+
+@media (max-width: 1023px) {
+    .testimonials {
+        max-width: 100vw;
+        padding: 1em 2em;
+    }
 }

@@ -1,16 +1,18 @@
 .footer-container {
-    max-width: 80vw;
+    max-width: 100vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 2em;
-    margin: 0 auto;
+    padding-left: 3em;
+    margin-bottom: 2em;
 }
 
 .footer-content {
-    flex: 0 0 32%;
-    padding: 3em;
+    padding: 0;
+    padding-top: 3em;
 }
 
 .footer-site-map {
@@ -42,4 +44,33 @@
 
 .contacts {
     flex: 1 0 auto;
+}
+
+@media (min-width: 1023px) {
+    .footer-container {
+        max-width: 80vw;
+        flex-direction: row;
+        align-items: center;
+        gap: 2em;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    .footer-content {
+        flex: 0 0 32%;
+        padding: 3em;
+    }
+    
+    /* .footer-container {
+        max-width: 100vw;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 3em;
+        margin-bottom: 2em;
+    } */
+    
+    /* .footer-content {
+        padding: 0;
+        padding-top: 3em;
+    } */
 }
