@@ -28,7 +28,7 @@
     list-style-type: none;
 }
 
-.footer-map a{
+.footer-map a {
     text-decoration: none;
     color: #333;
 }
@@ -55,22 +55,9 @@
         margin: 0 auto;
         padding: 0;
     }
-    
+
     .footer-content {
         flex: 0 0 32%;
         padding: 3em;
     }
-    
-    /* .footer-container {
-        max-width: 100vw;
-        flex-direction: column;
-        align-items: flex-start;
-        padding-left: 3em;
-        margin-bottom: 2em;
-    } */
-    
-    /* .footer-content {
-        padding: 0;
-        padding-top: 3em;
-    } */
 }

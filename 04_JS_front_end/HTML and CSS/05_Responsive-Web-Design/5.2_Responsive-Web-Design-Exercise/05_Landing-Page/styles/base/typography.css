@@ -34,9 +34,17 @@ html {
     }
 }
 
-h1 { font-size: 2.8em; } /* 14 * 2.8 = 39px */
-h2 { font-size: 2.5em; } /* 14 * 2.2 = 31px */
-h3 { font-size: 1.2em; } /* 14 * 1.8 = 25px */
+h1 {
+    font-size: 2.8em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
 
 h2,
 .site-footer h3 {
