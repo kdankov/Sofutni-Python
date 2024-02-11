@@ -28,9 +28,9 @@ html {
     }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 2000px) {
     html {
-        font-size: 26px;
+        font-size: 28px;
     }
 }
 
@@ -45,6 +45,7 @@ h2 {
 h3 {
     font-size: 1.2em;
 }
+
 
 h2,
 .site-footer h3 {
